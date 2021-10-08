@@ -1,0 +1,349 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    position: relative;
+}
+
+.container{
+    width: 100%;
+    height: 40vh;
+    /* background-color: red; */
+}
+.container h1{
+    font-size: 40px;
+    padding-top: 4%;
+    padding-left: 4%;
+}
+.container p{
+    font-size: 16px;
+    width: 500px;
+    padding-top: 4%;
+    padding-left: 4%;
+}
+.big_container h3{
+    font-size: 26px;
+    width: 500px;
+    padding-top: 4%;
+    padding-left: 4%;
+}
+.big_container{
+    width: 90%;
+    height: 60vh;
+    position: absolute;
+    left: 5%;
+}
+
+.container_boxes{
+    position: relative;
+    top: 10%;
+    margin: auto;
+    width: 80%;
+    height: 400px;
+    /* background-color: yellow; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 20px;
+}
+
+.box{
+    /* background-color: red; */
+    box-shadow: 2px 0px 10px gray;
+    position: relative;
+}
+
+.img{
+    margin: auto;
+    margin-top: 5%;
+    background-color: #a9a9a9;
+    width: 80%;
+    height: 55%;
+}
+.box p{
+    position: absolute;
+    top: 55%;
+    left: 23%;
+    width: 50%;
+    height: 29px;
+    background-color: dodgerblue;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 3;
+}
+
+.box h4{
+    width: 90%;
+    margin-top: 10%;
+    text-align: center;
+}
+.stars{
+    position: absolute;
+    top: 80%;
+    left: 5%;
+    color: gold;
+}
+
+.programming{
+    width: 84%;
+    height: 100vh;
+    position: absolute;
+    left: 13%;
+    top: 130vh;
+}
+.container_pro{
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+    height: 20%;
+    /* background-color: aqua; */
+}
+button{
+    width: 133px;
+    height: 40px;
+    background-color: palevioletred;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+}
+
+.div_container{
+    position: absolute;
+    top: 30%;
+    width: 80%;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px;
+}
+.div{
+    position: relative;
+    background-color: #a9a9a9;
+}
+.div h1{
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    color: #fff;
+}
+
+
+
+@media only screen and (max-width: 1200px){
+    .box p{
+        position: absolute;
+        top: 50%;
+        left: 23%;
+        width: 50%;
+        font-size: 12px;
+        height: 29px;
+        background-color: dodgerblue;
+        border-radius: 10px;
+        text-align: center;
+        z-index: 3;
+    }
+    .div_container{
+        position: absolute;
+        top: 20%;
+        width: 80%;
+        height: 90vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-gap: 20px;
+    }
+    .div{
+        position: relative;
+        background-color: #a9a9a9;
+    }
+    .stars{
+       margin-top: 10%;
+    }
+
+    .programming{
+        position: relative;
+        top: 50vh;
+    }
+
+}
+
+@media only screen and (max-width: 900px){
+
+    .container_boxes{
+        position: relative;
+        top: 10%;
+        margin: auto;
+        width: 80%;
+        height: 600px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 20px;
+    }
+    button{
+        width: 93px;
+        height: 30px;
+        background-color: palevioletred;
+        color: #fff;
+        font-size: 13px;
+        border: none;
+        border-radius: 10px; 
+    }
+    .container_pro h1{
+        font-size: 24px;
+    }
+    
+    .container h1{
+        font-size: 35px;
+        padding-top: 4%;
+        padding-left: 4%;
+    }
+    .container p{
+        font-size: 13px;
+        width: 500px;
+        padding-top: 4%;
+        padding-left: 4%;
+    }
+    .big_container h3{
+        font-size: 22px;
+        width: 500px;
+        padding-top: 4%;
+        padding-left: 4%;
+    }
+    .big_container{
+        position: absolute;
+        top: 25%;
+    }
+
+    .programming{
+        position: absolute;
+        top: 70vh;
+    }
+    .box p{
+        position: absolute;
+        top: 54%;
+        left: 23%;
+        width: 50%;
+        font-size: 12px;
+        height: 29px;
+        background-color: dodgerblue;
+        border-radius: 10px;
+        text-align: center;
+        z-index: 3;
+    }
+}
+
+@media only screen  and (max-width: 500px) {
+    .stars{
+        position: absolute;
+        top: 78%;
+        left: 5%;
+        color: gold;
+    }
+
+    .container_boxes{
+        position: relative;
+        top: 10%;
+        margin: auto;
+        width: 80%;
+        height: 1000px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+    .container h1{
+        font-size: 25px;
+        padding-top: 4%;
+        padding-left: 4%;
+    }
+    .container p{
+        font-size: 10px;
+        width: 50%;
+        padding-top: 4%;
+        padding-left: 4%;
+    }
+    .big_container h3{
+        font-size: 16px;
+        width: 80%;
+        background-color: aqua;
+        padding-top: 4%;
+        padding-left: 4%;
+    }
+    .programming{
+        position: relative;
+        top: 80vh;
+        /* left: 20%; */
+    }
+
+    .div_container{
+        position: absolute;
+        top: 30%;
+        width: 80%;
+        height: 140vh;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 20px;
+    }
+    .div{
+        position: relative;
+        background-color: #a9a9a9;
+    }
+    .div h1{
+        position: absolute;
+        top: 36%;
+        left: 35%;
+        color: #fff;
+    }
+    .box p{
+        position: absolute;
+        top: 57%;
+        left: 23%;
+        width: 50%;
+        font-size: 12px;
+        height: 29px;
+        background-color: dodgerblue;
+        border-radius: 10px;
+        text-align: center;
+        z-index: 3;
+    }
+}
+
+@media only screen and (max-width: 300px){
+    .big_container{
+        position: absolute;
+        top: 15vh;
+    }
+    .container_pro h1{
+        font-size: 14px;
+    }
+    button{
+        width: 30%;
+        height: 20px;
+        font-size: 10px;
+    }
+    .div h1{
+        font-size: 18px;
+    }
+
+    .programming{
+        position: absolute;
+        top: 100vh;
+    }
+    .div_container{
+        position: absolute;
+        top: 15vh;
+    }
+
+}
